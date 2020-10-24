@@ -1,0 +1,33 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header \">
+                <div class="dropdown profile-element">
+                    <a class="dropdown-toggle" href="@Url.Action("Index", "Home", new { area = "" })">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">Rafael Aguiar Web App</strong>
+                            </span>
+                            <span class="text-muted text-xs block"><small>WITH ASP.NET CORE</small></span>
+                        </span>
+                    </a>
+                </div>
+                <div class="logo-element">
+                    RA+
+                </div>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Home",  new { area = "" })"><i class="fa fa-home"></i> <span class="nav-label">Home</span> </a>
+            </li>            
+            <li>
+                <a href="@Url.Action("Index", "Calculator", new { area = "" })"><i class="fa fa-calculator"></i> <span class="nav-label">Calculator</span></a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Price", new { area = "" })"><i class="fa fa-money"></i> <span class="nav-label">Price</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/rsaguiar/ra.webapp" target="_blank"><i class="fa fa-code"></i> <span class="nav-label">Code Repository</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>

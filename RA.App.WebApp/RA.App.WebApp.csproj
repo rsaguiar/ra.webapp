@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RA.App.Mapper\RA.App.Mapper.csproj" />
+    <ProjectReference Include="..\RA.App.Service\RA.App.Service.csproj" />
+    <ProjectReference Include="..\RA.App.ViewModel\RA.App.ViewModel.csproj" />
+    <ProjectReference Include="..\RA.App.MockRepository\RA.App.MockRepository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="wwwroot\image\" />
+  </ItemGroup>
+
+</Project>

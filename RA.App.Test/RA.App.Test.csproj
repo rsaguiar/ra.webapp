@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RA.App.CommonRepository\RA.App.CommonRepository.csproj" />
+    <ProjectReference Include="..\RA.App.Exception\RA.App.Exception.csproj" />
+    <ProjectReference Include="..\RA.App.Service\RA.App.Service.csproj" />
+    <ProjectReference Include="..\RA.App.MockRepository\RA.App.MockRepository.csproj" />
+  </ItemGroup>
+
+</Project>

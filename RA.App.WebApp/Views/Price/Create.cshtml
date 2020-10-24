@@ -1,0 +1,56 @@
+﻿@model RA.App.ViewModel.PriceViewModel
+
+@{ 
+    ViewBag.Title = "Adicionar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2 class="page-title">@ViewBag.Title</h2>        
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<form asp-action="Create">
+    <div class="wrapper wrapper-content animated fadeInDown">
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div class="form-horizontal">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>                    
+                    <div class="form-group">
+                        <label asp-for="FromDDDCode" class="control-label col-md-2"></label>
+                        <div class="col-md-2">
+                            <input asp-for="FromDDDCode" class="form-control" />
+                            <span asp-validation-for="FromDDDCode" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ToDDDCode" class="control-label col-md-2"></label>
+                        <div class="col-md-2">
+                            <input asp-for="ToDDDCode" class="form-control" />
+                            <span asp-validation-for="ToDDDCode" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PricePerMinute" class="control-label col-md-2"></label>
+                        <div class="col-md-2">
+                            <input asp-for="PricePerMinute" class="form-control" />
+                            <span asp-validation-for="PricePerMinute" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer panel-info">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-10">
+                        <a asp-action="Index" class="btn btn-white">Cancel</a>
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
